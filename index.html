@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shred Studio</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Galada&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="header-logo">Shred Studio</h1>
+    </header>
+    <main>
+      <!--Nav Bar-->
+      <nav>
+        <ul class="main-nav">
+          <li><a href="#our-mission" class="main-nav-link">Our Mission</a></li>
+          <li><a href="#guitars" class="main-nav-link">Guitars</a></li>
+          <li><a href="#our-team" class="main-nav-link">Our Team</a></li>
+          <li><a href="#gear" class="main-nav-link">Gear</a></li>
+        </ul>
+      </nav>
+      <!--First row (left side) welcome intro text-->
+      <div class="row">
+        <div class="column column-with-text column-orange-background">
+          <h2>Welcome to Shred Studio!</h2>
+          <p>
+            Shred Studio is your gateway to the ultimate guitar experience. From
+            electric dreams and acoustic wonders, to vintage classics and
+            cutting-edge innovations, we have it all.
+          </p>
+          <p>
+            Whether you're a seasoned shredder, or a budding beginner, we're
+            here to match you with the perfect guitar. With sleek designs,
+            electrifying tones and unbeatable quality, hearing about our
+            hand-picked collection of beautifully eclectic guitars will be music
+            to your ears.
+          </p>
+          <p>
+            If you're looking for the perfect new guitar, or you've have decided
+            to part ways with a much-loved used one, Shred Studio have got you
+            covered.
+          </p>
+        </div>
+        <!--First row (right side) form-->
+        <div class="column column-size-double">
+          <form method="post" action="#">
+            <h2 class="form-title">Guitar Query</h2>
+            <div class="input">
+              <p class="input-title">Name:</p>
+              <input type="text" name="name" placeholder="Your name..." />
+            </div>
+            <div class="input">
+              <p class="input-title">Email address:</p>
+              <input type="text" name="email" placeholder="Your email..." />
+            </div>
+            <div class="input">
+              <p class="input-title">Message:</p>
+              <textarea
+                name="message"
+                cols="50"
+                rows="4"
+                placeholder="Type your message here..."
+              ></textarea>
+            </div>
+            <div class="input">
+              <p class="input-title">Topic:</p>
+              <label>
+                <input type="radio" name="query" value="Buying a guitar" />
+                Buying a guitar
+              </label>
+              <label>
+                <input type="radio" name="query" value="Selling a guitar" />
+                Selling a guitar
+              </label>
+              <label>
+                <input type="radio" name="query" value="Guitar Gear" />
+                Guitar gear
+              </label>
+              <label>
+                <input type="radio" name="query" value="Guitar consultation" />
+                Guitar consultation
+              </label>
+            </div>
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
+      <!--Second row / Our Mission-->
+      <div class="row" id="our-mission">
+        <div class="column column-with-media">
+          <img
+            src="./Images/guitars/guitarshop3.jpg"
+            alt="photo of guitar collection"
+          />
+        </div>
+        <div class="column column-with-text column-blue-background">
+          <h2 class="title-uppercase">Our Mission</h2>
+          <p>Very simply, to sell you the <span>coolest</span> guitars.</p>
+        </div>
+      </div>
+      <!--Third row / Our Guitars -- add 'row-reversed' to swap order on big screen-->
+      <div class="row row-reversed" id="guitars">
+        <div class="column column-with-media">
+          <img
+            src="./Images/guitars/flyingv.jpg"
+            alt="picture of flying-v guitars"
+          />
+        </div>
+        <div class="column column-with-text column-orange-background">
+          <h2 class="title-uppercase">Our Guitars</h2>
+          <p>
+            From Fender and Ibanez, to Gibson and Epiphone. We've got a
+            collection of the coolest guitars that we can't wait to show you.
+          </p>
+          <p>
+            Get ready to elevate your sound and style to new heights with our
+            handpicked selection of guitars, designed to inspire and ignite your
+            passion for music.
+          </p>
+        </div>
+      </div>
+      <!--Fourth row / Our Team-->
+      <div class="row" id="our-team">
+        <div class="column column-with-media">
+          <img src="./Images/team/person2.jpg" alt="photo of team member" />
+        </div>
+        <div class="column column-with-text column-blue-background">
+          <h2 class="title-uppercase">Our Team</h2>
+          <p>
+            We've got a talented bunch of guitar enthusiasts, seasoned shredders
+            and tone aficionados ready to chat to you.
+          </p>
+        </div>
+      </div>
+      <!--Fifth row / Guitar Gear -- add 'row-reversed' to swap order on big screen-->
+      <div class="row row-reversed" id="gear">
+        <div class="column column-with-media">
+          <img src="./Images/guitars/pedals.jpg" alt="photo of guitar pedald" />
+        </div>
+        <div class="column column-with-text column-orange-background">
+          <h2 class="title-uppercase">Guitar Gear</h2>
+          <p>
+            From amplifiers and pedals, to cables and strings, we've got you
+            covered with the best guitar gear you could possibly need.
+          </p>
+        </div>
+      </div>
+    </main>
+    <!--Footer-->
+    <footer>
+      <p class="copyright">&copy; Shred Studio, 2024.</p>
+      <ul class="footer-nav">
+        <li><a class="footer-nav-link" href="#">Privacy Policy</a></li>
+        <li><a class="footer-nav-link" href="#">Cookies</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
